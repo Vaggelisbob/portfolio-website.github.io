@@ -66,8 +66,14 @@ ul {
 }
  
 ul > li {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+ul > li > p {
+    padding-top: .7rem;
+    color:rgb(204, 5, 194);
+    width: .5em;
 }
  
 ul > li > a {
@@ -75,6 +81,7 @@ ul > li > a {
     color: black;
     padding: 2rem;
     text-transform: uppercase;
+    font-size: larger;
 }
  
 ul > li > a:hover {
@@ -82,12 +89,27 @@ ul > li > a:hover {
     opacity: 1.5;
 }
 
-@media screen and (max-width: 555px)
+@media screen and (max-width: 690px)
 {
     ul > li > a {
         text-decoration: none;
         color: black;
         padding: .6rem;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    ul > li > a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: large;
+        padding: 1.5rem;
+    }
+
+    .inactive {
+        display: none;
     }
 }
 /* navbar styling ends */
@@ -107,6 +129,7 @@ ul > li > a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto
 }
 
 .img-wrapper-home > p {
@@ -149,7 +172,8 @@ ul > li > a:hover {
 }
 
 .test > img {
-    width: 28rem; 
+    margin: 0 auto;
+    width: 28rem;     
     height: 70vh;  
     box-shadow: 0 54px 80px rgb(58 125 171 / 13%), 0 22.5599px 33.4221px rgb(58 125 171 / 9%), 0 12.0616px 17.869px rgb(58 125 171 / 8%), 0 6.76164px 10.0172px rgb(58 125 171 / 7%), 0 3.59106px 5.32008px rgb(58 125 171 / 5%), 0 1.49432px 2.21381px rgb(58 125 171 / 4%);
 }
